@@ -83,20 +83,20 @@ ___
 # 6. 链接
 &emsp;链接分为行内式和参数式这两种方法
 ## 6.1 行内式
-&emsp;**用法介绍**：`[Sunny的网站](http://395156224.github.io/sunny)`
+&emsp;**用法介绍**：`[Sunny的网站](http://395156224.github.io/)`
 &emsp;**展示：**
 
-[Sunny的网站](http://395156224.github.io/sunny)
+[Sunny的网站](http://395156224.github.io/)
 
 ## 6.2 参数式
 &emsp;**用法介绍**：
 ```
-[site]:http://395156224.github.io/sunny "网站"
-[网站]:http://395156224.github.io/sunny "网站"
+[site]:http://395156224.github.io/ "网站"
+[网站]:http://395156224.github.io/ "网站"
 这里是[site],这里是[网站]
 ```
-[site]:http://395156224.github.io/sunny "网站"
-[网站]:http://395156224.github.io/sunny "网站"
+[site]:http://395156224.github.io/ "网站"
+[网站]:http://395156224.github.io/ "网站"
 
 &emsp;**展示：**
 
@@ -122,7 +122,7 @@ ___
 &emsp;**用法介绍**：` `` `
 &emsp;**展示：**
 
-`<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/sunny">点我跳转</a></p>`
+`<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/">点我跳转</a></p>`
 
 ## 8.2 多行用
 &emsp;**用法介绍**：
@@ -135,9 +135,9 @@ ___
 
 &emsp;**展示：**
 ``` 多行代码如何编写
-<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/sunny">点我跳转</a></p>
-<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/sunny">点我跳转</a></p>
-<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/sunny">点我跳转</a></p>
+<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/">点我跳转</a></p>
+<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/">点我跳转</a></p>
+<p>你好使用者，要看看Sunny的网站吗？<a href="http://395156224.github.io/">点我跳转</a></p>
 ```
 
 <br>
