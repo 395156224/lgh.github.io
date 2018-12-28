@@ -18,7 +18,7 @@ Markdown 使用语法
 3. 配置为：
 ```
 "markdown.styles": [
-  "E:\\MyWeb\\Sunny-study\\Document-Library\\Public-Repertory\\css\\markdown-github.css"
+  "E:\\project\\sunny\\GithubProjects\\sunny\\docs\\.vuepress\\public\\css\\markdown-github.css"
 ]
 ```
 
