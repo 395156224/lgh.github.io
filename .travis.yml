@@ -1,0 +1,9 @@
+Default yarn install
+Default script	npm test
+Matrix keys	env, node_js
+Support	Travis CI
+
+language: node_js
+node_js:
+  - "iojs"
+  - "v10.8.0"
