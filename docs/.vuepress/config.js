@@ -61,14 +61,14 @@ module.exports = {
             '/notes/': [
                 ['', '前言'],
                 ['markdown', 'Markdown语法'],
-                ['pageOne', '第一页'],
-                ['pageTwo', '第二页']
+                ['GithubPages', 'GithubPages'],
+                ['VuePress', 'VuePress']
+                ['TravisCI', 'TravisCI'],
+                ['VueRouter', 'VueRouter'],
             ],
             // 侧边栏在 /about/ 目录上
             '/about/': [
-                ['', 'README'],
-                ['GithubPages', 'GithubPages'],
-                ['VuePress', 'VuePress']
+                ['', 'README']
             ]
         }
     }

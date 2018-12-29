@@ -1,11 +1,5 @@
-# Default yarn install
-# Default script	npm test
-# Matrix keys	env, node_js
-# Support	Travis CI
-
 language: node_js
 node_js:
-  - "node"
   - "10.8.0"
 
 env:
@@ -22,8 +16,6 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: ./docs/.vuepress/dist
-  # target-branch: github.com/395156224/395156224.github.io.git
   on:
     branch: master
 
