@@ -9,7 +9,7 @@ node_js:
   - "10"
 
 env:
-  - GITHUB_TOKEN=3ddf9acc7c84b70fdfbdf6114cc10539f9e61449
+  - GITHUB_TOKEN=74e9655d7ec70ea7296d84527987a62e5548c087
 
 cache:
   yarn: true
