@@ -8,8 +8,9 @@ node_js:
   - "node"
   - "10.8.0"
 
-# env:
-#   - GITHUB_TOKEN=6ed331fca4ccaab6dc408fd8f9aa1df26b0ff2e3
+env:
+ global:
+   - GH_REF: github.com/395156224/395156224.github.io.git
 
 cache:
   yarn: true
@@ -22,7 +23,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: ./docs/.vuepress/dist
-  target-branch: https://github.com/395156224/395156224.github.io.git
+  # target-branch: github.com/395156224/395156224.github.io.git
   on:
     branch: master
 
@@ -34,3 +35,14 @@ before_script:
 
 script:
   - yarn build
+
+after_script:
+  # 导航到构建输出目录
+  - cd docs/.vuepress/dist
+  - git init
+  - git add -A
+  - git commit -m 'Update Sunny Home Pages'
+
+  # 推到你仓库的的 gh-page 分支
+  # 将 <USERNAME>/<REPO> 替换为你的信息
+  - git push --force --quiet  "https://${GITHUB_TOKEN}@${GH_REF}" master:master
