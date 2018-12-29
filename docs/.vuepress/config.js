@@ -60,11 +60,11 @@ module.exports = {
             // 侧边栏在 /index/ 目录上
             '/notes/': [
                 ['', '前言'],
-                ['markdown', 'Markdown语法'],
+                ['Markdown', 'Markdown语法'],
                 ['GithubPages', 'GithubPages'],
-                ['VuePress', 'VuePress']
+                ['VuePress', 'VuePress'],
                 ['TravisCI', 'TravisCI'],
-                ['VueRouter', 'VueRouter'],
+                ['VueRouter', 'VueRouter']
             ],
             // 侧边栏在 /about/ 目录上
             '/about/': [
