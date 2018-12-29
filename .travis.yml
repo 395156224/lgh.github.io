@@ -13,6 +13,8 @@ env:
 
 cache:
   yarn: true
+  directories:
+    - /node_modules/
 
 deploy:
   provider: pages
@@ -24,7 +26,11 @@ deploy:
   on:
     branch: master
 
+before_install:
+
+install:
+
 before_script:
-  - yarn install
+
 script:
   - yarn build
