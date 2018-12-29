@@ -1,9 +1,30 @@
-Default yarn install
-Default script	npm test
-Matrix keys	env, node_js
-Support	Travis CI
+# Default yarn install
+# Default script	npm test
+# Matrix keys	env, node_js
+# Support	Travis CI
 
 language: node_js
 node_js:
-  - "iojs"
-  - "v10.8.0"
+  - "node"
+  - "10"
+
+env:
+  - GITHUB_TOKEN=1a88856371118072b50cda4175073fd3ecf6db0e
+
+cache:
+  yarn: true
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: ./docs/.vuepress/dist
+  target-branch: https://github.com/395156224/395156224.github.io.git
+  on:
+    branch: master
+
+before_script:
+  - yarn install
+script:
+  - yarn build
