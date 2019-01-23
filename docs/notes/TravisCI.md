@@ -50,7 +50,8 @@ node_js:
 
 env:
  global:
-   - GH_REF: github.com/395156224/395156224.github.io.git
+   - GH_REF: github.com/395156224/sunny.git
+   - IO_REF: github.com/395156224/395156224.github.io.git
 
 cache:
   yarn: true
@@ -79,11 +80,13 @@ after_script:
   - cd docs/.vuepress/dist
   - git init
   - git add -A
-  - git commit -m 'Update Sunny Home Pages'
+  - git commit -m 'Update Sunny Home Pages by Travis CI'
 
-  # 推到你仓库的的 gh-page 分支
-  # 将 <USERNAME>/<REPO> 替换为你的信息
-  - git push --force --quiet  "https://${GITHUB_TOKEN}@${GH_REF}" master:master
+  # 推到源文件仓库的的 gh-page 分支
+  - git push --force --quiet  "https://${GITHUB_TOKEN}@${GH_REF}" master:gh-pages
+
+  # 推到发布的 .io 分支
+  - git push --force --quiet  "https://${GITHUB_TOKEN}@${IO_REF}" master:master
 ```
 
 # 4、提交代码/文章到源文件仓库

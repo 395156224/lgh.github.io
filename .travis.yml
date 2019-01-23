@@ -34,10 +34,9 @@ after_script:
   - cd docs/.vuepress/dist
   - git init
   - git add -A
-  - git commit -m 'Update Sunny Home Pages'
+  - git commit -m 'Update Sunny Home Pages by Travis CI'
 
   # 推到源文件仓库的的 gh-page 分支
-  # 将 <USERNAME>/<REPO> 替换为你的信息
   - git push --force --quiet  "https://${GITHUB_TOKEN}@${GH_REF}" master:gh-pages
 
   # 推到发布的 .io 分支
